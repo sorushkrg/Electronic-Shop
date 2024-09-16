@@ -1,0 +1,288 @@
+/* footer */
+#footer {
+    padding: 0 0 30px 0px;
+    color: white;
+    font-size: 14px;
+    background-color: $Strong-primary;
+    margin-top: 100px;
+
+    .footer-top {
+        padding: 60px 0 30px 0;
+        background-color: $Strong-primary;
+        color: white;
+
+        .footer-contact {
+            margin-bottom: 30px;
+
+            h3 {
+                color: $Strong-secend;
+            }
+
+            h4 {
+                font-size: 22px;
+                margin: 0 0 30px 0;
+                padding: 2px 0 2px 0;
+                line-height: 1;
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 24px;
+                margin-bottom: 0;
+                color: white;
+            }
+        }
+
+        h4 {
+            font-size: 16px;
+            font-weight: bold;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .footer-links {
+            margin-bottom: 30px;
+            margin-top: 10px;
+
+            h4 {
+                color: $Strong-secend;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    padding: 10px 0;
+                    display: flex;
+                    align-items: center;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        display: inline-block;
+                        line-height: 1;
+                        font-weight: bold;
+                        transition: 0.5s ease;
+
+                        &:hover {
+                            color: $Strong-secend;
+                        }
+                    }
+                }
+            }
+        }
+
+        .socail-links {
+            a {
+                font-size: 18px;
+                display: inline-block;
+                text-decoration: none;
+                background-color: #373737;
+                color: white;
+                line-height: 1;
+                padding: 8px 0;
+                margin-right: 4px;
+                border-radius: 50%;
+                text-align: center;
+                width: 36px;
+                transition: 0.5s ease;
+
+                &:hover {
+                    background-color: $Strong-secend;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        float: left;
+    }
+
+    .credits {
+        float: right;
+        text-align: center;
+        font-size: 13px;
+
+        a {
+            color: $Strong-secend;
+        }
+    }
+}
+
+/* footer */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.arrow {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* login */
+#login {
+    width: 65%;
+    height: 70vh;
+    background-color: $Strong-primary;
+    margin-top: 35px;
+    border-radius: 10px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+#side1 {
+    h3 {
+        color: $Strong-secend;
+        font-weight: bold;
+        margin-top: 200px;
+    }
+}
+
+#side2 {
+    background-color: white;
+    height: 70vh;
+    border-radius: 10px;
+
+    h3 {
+        margin-top: 30px;
+        color: $Strong-secend;
+        font-weight: bold;
+        text-shadow: 0px 1px 1px black;
+    }
+
+    p {
+        margin-top: 10px;
+    }
+
+    .input2 {
+        input {
+            margin-top: 15px;
+            width: 300px;
+            border: none;
+            border-bottom: 2px solid $Strong-secend;
+
+            &::placeholder {
+                font-weight: bold;
+            }
+        }
+    }
+
+    #btnlogin {
+        padding-top: 10px;
+
+        a {
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 15px;
+            background-color: $Strong-primary;
+            color: white;
+            font-weight: bold;
+            border: none;
+            text-shadow: 0px 0px 1px black;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .input2 {
+        input {
+            width: 250px;
+        }
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .input2 {
+        input {
+            width: 260px;
+        }
+    }
+
+    #side2 {
+        height: 60vh;
+    }
+}
+
+/* login */
+
+/* about */
+#about {
+    margin-top: 30px;
+
+    h3 {
+        font-weight: bold;
+        color: $Strong-secend;
+        text-shadow: 0px 1px 1px black;
+    }
+
+    button {
+        width: 150px;
+        height: 36px;
+        color: white;
+        background-color: $Strong-third;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+/* about */
+
+/* contact */
+#contact {
+    margin-top: 50px;
+
+    .card {
+        height: 80px;
+        margin-top: 20px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        i {
+            margin-top: 10px;
+            margin-left: 10px;
+            font-size: 15px;
+            color: $Strong-third;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        h6 {
+            margin-left: 10px;
+            margin-top: 10px;
+            letter-spacing: 3px;
+            font-weight: bold;
+            color: $Strong-third;
+        }
+    }
+
+    .messagebtn {
+        button {
+            margin-top: 30px;
+            width: 200px;
+            height: 33px;
+            background: transparent;
+            border: 2px solid $Strong-third;
+            font-weight: bold;
+            letter-spacing: 3px;
+            transition: 0.5s ease;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $Strong-third;
+                color: white;
+            }
+        }
+    }
+}
+
+/* contact */

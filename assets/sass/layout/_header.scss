@@ -1,0 +1,244 @@
+/* top navbar */
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        margin-top: 13px;
+        margin-left: 15px;
+    }
+
+    .icons {
+        margin-right: 15px;
+
+        img {
+            width: 18px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        margin-left: 10px;
+
+        img {
+            margin-bottom: 3px;
+        }
+
+        &:hover {
+            color: black;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        a {
+            font-size: 13px;
+
+            img {
+                width: 15px;
+            }
+        }
+
+        p {
+            font-size: 13px;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        a {
+            font-size: 10px;
+
+            img {
+                width: 13px;
+            }
+        }
+
+        p {
+            font-size: 10px;
+        }
+    }
+
+    @media screen and (max-width: 318px) {
+        a {
+            font-size: 8px;
+            margin-left: 0;
+
+            img {
+                width: 10px;
+                margin-left: 0;
+            }
+        }
+
+        p {
+            font-size: 10px;
+            margin-top: 20px;
+        }
+    }
+}
+/* top navbar */
+
+/* navbar */
+#navbar {
+    background-color: $Strong-primary;
+
+    #logo {
+        margin-left: 15px;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 6px;
+
+        span {
+            color: $Strong-secend;
+        }
+
+        #span1 {
+            font-size: 30px;
+        }
+    }
+
+    .navbar-nav {
+        margin-left: 20px;
+    }
+
+    .nav-item {
+        margin-left: 10px;
+
+        .nav-link {
+            color: white;
+            margin-left: 2px;
+            text-shadow: 0px 0px 1px black;
+            transition: 0.5s ease;
+
+            &:hover {
+                color: $Strong-secend;
+            }
+        }
+    }
+
+    .dropdown-menu {
+        background-color: $Strong-primary;
+
+        li {
+            a {
+                color: white;
+                transition: 0.5s ease;
+
+                &:hover {
+                    background-color: white;
+                    color: $Strong-secend;
+                }
+            }
+        }
+    }
+
+    #search {
+        input {
+            border-radius: 50px;
+            border: none;
+        }
+
+        button {
+            border-radius: 50px;
+            color: white;
+            border: 1px solid $Strong-secend;
+            background-color: $Strong-secend;
+        }
+    }
+}
+/* navbar */
+
+/* home content */
+.home {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #a9a9a92b;
+    z-index: 0;
+
+    .img {
+        flex: 1 1 300px;
+
+        img {
+            margin-top: 30px;
+            width: 100%;
+        }
+    }
+
+    .content {
+        flex: 1 1 400px;
+        margin-top: 20px;
+
+        h1 {
+            color: $Strong-primary;
+            font-weight: bold;
+            margin-left: 23px;
+            font-size: 55px;
+            text-shadow: -1px 1px 1px black;
+
+            span {
+                color: $Strong-primary;
+                text-shadow: 1px 1px 1px black;
+            }
+
+            #span2 {
+                color: $Strong-secend;
+            }
+        }
+
+        p {
+            margin-left: 23px;
+        }
+    }
+
+    .btn {
+        margin-left: 13px;
+
+        button {
+            width: 150px;
+            height: 32px;
+            letter-spacing: 3px;
+            background-color: $Strong-primary;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            transition: 0.5s ease;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $Strong-secend;
+                color: black;
+                border: none;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        height: 90vh;
+    }
+
+    @media screen and (max-width: 799px) {
+        height: 140vh;
+    }
+
+    @media screen and (max-width: 550px) {
+        height: 110vh;
+    }
+
+    @media screen and (max-width: 420px) {
+        .content h1 {
+            font-size: 45px;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        .content h1 {
+            font-size: 36px;
+        }
+    }
+}
+/* home content */
